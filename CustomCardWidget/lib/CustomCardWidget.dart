@@ -5,8 +5,8 @@ class CustomCard extends StatelessWidget {
   final String title;
   final String description;
   final String imgPath;
-  double imageHeight;
-  double imageWidth;
+  final double imageHeight;
+  final double imageWidth;
   
   CustomCard({this.title, this.description, this.imgPath, this.imageWidth, this.imageHeight});
 

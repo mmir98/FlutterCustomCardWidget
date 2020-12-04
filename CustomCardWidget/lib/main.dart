@@ -1,5 +1,4 @@
 import 'package:CustomCardWidget/CustomCardWidget.dart';
-import 'package:CustomCardWidget/favoriteWidget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Custom Widget',
       theme: ThemeData(
-        primarySwatch: Colors.redAccent.shade400,
+        primarySwatch: Colors.blueGrey,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Flutter Custom Widget'),
@@ -66,6 +65,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         title: e['title'],
                         description: e['description'],
                         imgPath: e['img'],
+                        // imageWidth: 500,  //Define a specific width and height for the image in the customCard.
+                        // imageHeight: 180,
                       ))
                   .toList()
             ],
