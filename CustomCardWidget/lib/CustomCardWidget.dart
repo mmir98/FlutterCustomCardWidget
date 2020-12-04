@@ -7,13 +7,19 @@ class CustomCard extends StatelessWidget {
   final String imgPath;
   final double imageHeight;
   final double imageWidth;
-  
-  CustomCard({this.title, this.description, this.imgPath, this.imageWidth, this.imageHeight});
+
+  CustomCard(
+      {this.title,
+      this.description,
+      this.imgPath,
+      this.imageWidth,
+      this.imageHeight});
 
   @override
   Widget build(BuildContext context) {
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      elevation: 3,
       child: Column(
         children: [
           Container(
@@ -61,7 +67,7 @@ class CustomCard extends StatelessWidget {
                       padding: const EdgeInsets.all(4.0),
                       child: RaisedButton(
                         onPressed: () => {},
-                        color: Colors.lightBlue,
+                        color: Colors.blueGrey,
                         child: Text(
                           "Read More",
                           style: TextStyle(
@@ -74,7 +80,7 @@ class CustomCard extends StatelessWidget {
                       padding: const EdgeInsets.all(4),
                       child: RaisedButton(
                         onPressed: () => {},
-                        color: Colors.lightBlue,
+                        color: Colors.blueGrey,
                         child: Text(
                           "Send",
                           style: TextStyle(color: Colors.white),
